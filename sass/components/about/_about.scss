@@ -1,0 +1,59 @@
+.about {
+  padding-top: 80px;
+
+  background-image: url(../images/about/about-bg.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 52px 80px;
+    height: 283px;
+
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 1.211;
+    letter-spacing: 0.57px;
+
+    border-radius: 50px;
+    border: solid 1px var(--accent-color);
+    background: #f2fbfe;
+  }
+
+  &__img {
+    margin: 0 100px 0 0;
+    width: 180px;
+    height: 180px;
+
+    border-radius: 30px;
+
+    &--r {
+      margin: 0 0 0 100px;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  &__item:nth-child(2n) {
+    justify-content: flex-end;
+    text-align: right;
+  }
+
+  &__item:nth-child(1) {
+    background-image: url(../images/about/bg-levels.jpg);
+  }
+  &__item:nth-child(2) {
+    background-image: url(../images/about/bg-lesson.jpg);
+  }
+  &__item:nth-child(3) {
+    background-image: url(../images/about/bg-children.jpg);
+  }
+  &__item:nth-child(4) {
+    background-image: url(../images/about/bg-graph.jpg);
+  }
+  &__item:nth-child(5) {
+    background-image: url(../images/about/bg-online.jpg);
+  }
+}

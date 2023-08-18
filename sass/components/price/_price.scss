@@ -1,0 +1,83 @@
+.price {
+  padding-top: 80px;
+  &__title {
+    margin-bottom: 60px;
+
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.225;
+    letter-spacing: 0.8px;
+    color: var(--title-txt-color);
+
+    &--span {
+      margin-left: 25px;
+      font-size: 25px;
+      font-weight: 300;
+      color: var(--accent-color);
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    // grid-template-columns: 575px 575px;
+    // gap: 60;
+    // grid-column: 3;
+    // grid-row: 200px;
+    // gap: 60px;
+  }
+
+  &__wrap {
+    // min-width: 575px;
+  }
+
+  &__wrapper {
+    padding: 52px;
+    border: solid 1px var(--accent-color);
+    border-radius: 40px;
+    // background: #835c5c;
+  }
+  &__content-title {
+    margin-bottom: 40px;
+
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.233;
+    letter-spacing: 0.45px;
+    color: var(--title-txt-color);
+  }
+  &__list {
+  }
+  &__item {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+
+    &--span {
+      color: var(--2, #1a6d90);
+      text-align: right;
+      font-size: 25px;
+      font-weight: 300;
+      letter-spacing: 0.5px;
+    }
+
+    &--flex {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  &__sublist {
+    padding-top: 20px;
+  }
+
+  &__subitem {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
