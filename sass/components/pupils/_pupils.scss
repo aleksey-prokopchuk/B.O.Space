@@ -1,0 +1,50 @@
+.pupils {
+  padding-top: 80px;
+
+  background-image: url(../../../images/pupils/pupils-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &__list {
+  }
+  &__item {
+    display: flex;
+  }
+
+  &__img-wrapper {
+    margin-right: 60px;
+    padding: 11px;
+
+    width: 290px;
+    height: 290px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    border: 1px solid var(--border-color);
+  }
+  &__img {
+    width: 268px;
+    height: 268px;
+    border-radius: 30px;
+  }
+  &__wrapper {
+  }
+  &__title {
+    margin-bottom: 50px;
+
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.225;
+    letter-spacing: 0.8px;
+
+    color: var(--title-txt-color);
+  }
+  &__content {
+    width: 630px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.227;
+    &--margin {
+      margin-bottom: 27px;
+    }
+  }
+}
