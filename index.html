@@ -198,7 +198,62 @@
       <div class="pupils" id="pupils">
         <div class="container">
           <h2 class="title">Наші учні</h2>
-          <ul class="pupils__list list-no-marker">
+
+          <!-- <swiper-container
+            class="mySwiper"
+            pagination="true"
+            pagination-clickable="true"
+            navigation="true"
+            space-between="50"
+            loop="true"
+          > -->
+
+          <swiper-container
+            class="mySwiper"
+            navigation="true"
+            space-between="100"
+            centered-slides="true"
+            autoplay-delay="4000"
+            autoplay-disable-on-interaction="false"
+          >
+            <swiper-slide>
+              <div class="pupils__item">
+                <div class="pupils__img-wrapper">
+                  <img class="pupils__img" src="./images/pupils/timur.jpg" alt="Учениця" />
+                </div>
+                <div class="pupils__wrapper">
+                  <h3 class="pupils__title">Тимур, 8 клас</h3>
+                  <p class="pupils__content pupils__content--margin">
+                    В школі стало набагато легше засвоювати матеріал, бо багато тем вже знайомі
+                    після індивідуальних занять.
+                  </p>
+                  <p class="pupils__content">
+                    Після року навчання поїхав до англомовного табору та відчував там себе
+                    комфортно, не маючи мовних барʼєрів з носіями мови.
+                  </p>
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <li class="pupils__item">
+                <div class="pupils__img-wrapper">
+                  <img class="pupils__img" src="./images/pupils/nastya.jpg" alt="Учень" />
+                </div>
+                <div class="pupils__wrapper">
+                  <h3 class="pupils__title">Настя, 7 клас</h3>
+                  <p class="pupils__content pupils__content--margin">
+                    Я планую після школи навчання закордоном, тому англійська дуже важлива для мене.
+                  </p>
+                  <p class="pupils__content">
+                    Читання, аудіювання, розмовний - ми працюємо над всіма напрямками, тому
+                    навчатися неважко. У групі нас четверо, тому увага приділяється кожному.
+                  </p>
+                </div>
+              </li>
+            </swiper-slide>
+          </swiper-container>
+
+          <!-- <ul class="pupils__list list-no-marker">
             <li class="pupils__item">
               <div class="pupils__img-wrapper">
                 <img class="pupils__img" src="./images/pupils/timur.jpg" alt="Учениця" />
@@ -215,7 +270,7 @@
                 </p>
               </div>
             </li>
-            <!-- <li class="pupils__item">
+            <li class="pupils__item">
               <div class="pupils__img-wrapper">
                 <img class="pupils__img" src="./images/pupils/nastya.jpg" alt="Учень" />
               </div>
@@ -229,8 +284,8 @@
                   неважко. У групі нас четверо, тому увага приділяється кожному.
                 </p>
               </div>
-            </li> -->
-          </ul>
+            </li>
+          </ul> -->
         </div>
       </div>
 
@@ -355,4 +410,5 @@
   </body>
   <script type="module" src="./js/scroll.js"></script>
   <script type="module" src="./js/up.js"></script>
+  <script type="module" src="./js/swiper-element-bundle.min.js"></script>
 </html>

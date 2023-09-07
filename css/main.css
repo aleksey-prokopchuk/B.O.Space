@@ -448,6 +448,9 @@ body {
 }
 .pupils__item {
   display: flex;
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .pupils__img-wrapper {
   margin-right: 60px;
