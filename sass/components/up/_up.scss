@@ -12,16 +12,7 @@
   background-color: var(--title-txt-color-opacity-50);
 
   cursor: pointer;
-  background-image: url('../../../images/svg/up.svg');
-}
-
-.up::before {
-  content: '';
-  width: 40px;
-  height: 40px;
-  //   background: transparent no-repeat center center;
-  //   background-size: 100% 100%;
-  background-image: url('../../../images/svg/up.svg');
+  background-image: url('../images/svg/up.svg');
 }
 
 .up_hide {

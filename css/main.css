@@ -123,14 +123,7 @@ body {
   height: 50px;
   background-color: var(--title-txt-color-opacity-50);
   cursor: pointer;
-  background-image: url("../../../images/svg/up.svg");
-}
-
-.up::before {
-  content: "";
-  width: 40px;
-  height: 40px;
-  background-image: url("../../../images/svg/up.svg");
+  background-image: url("../images/svg/up.svg");
 }
 
 .up_hide {
