@@ -341,7 +341,7 @@ body {
 
 .price {
   padding-top: 80px;
-  background-image: url(../../../images/price/prise-bg.png);
+  background-image: url(../images/price/prise-bg.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -483,7 +483,7 @@ body {
 
 .rules {
   padding-top: 80px;
-  background-image: url(../../../images/rules/rules-bg.png);
+  background-image: url(../images/rules/rules-bg.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -523,7 +523,7 @@ body {
 .contacts {
   padding-top: 80px;
   padding-bottom: 80px;
-  background-image: url(../../../images/contacts/contacts-bg.png);
+  background-image: url(../images/contacts/contacts-bg.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -570,7 +570,7 @@ body {
   top: 495px;
   width: 315px;
   height: 1px;
-  background-image: url(../../../images/contacts/line-l.svg);
+  background-image: url(../images/contacts/line-l.svg);
 }
 .contacts__wrapper::after {
   content: "";
@@ -579,7 +579,7 @@ body {
   top: 495px;
   width: 315px;
   height: 1px;
-  background-image: url(../../../images/contacts/line-r.svg);
+  background-image: url(../images/contacts/line-r.svg);
 }
 .contacts__content {
   margin-bottom: 15px;

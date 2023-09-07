@@ -2,7 +2,7 @@
   padding-top: 80px;
   padding-bottom: 80px;
 
-  background-image: url(../../../images/contacts/contacts-bg.png);
+  background-image: url(../images/contacts/contacts-bg.png);
   background-repeat: no-repeat;
   background-position: center;
 
@@ -58,7 +58,7 @@
     top: 495px;
     width: 315px;
     height: 1px;
-    background-image: url(../../../images/contacts/line-l.svg);
+    background-image: url(../images/contacts/line-l.svg);
   }
   &__wrapper::after {
     content: '';
@@ -67,7 +67,7 @@
     top: 495px;
     width: 315px;
     height: 1px;
-    background-image: url(../../../images/contacts/line-r.svg);
+    background-image: url(../images/contacts/line-r.svg);
   }
   &__content {
     margin-bottom: 15px;
