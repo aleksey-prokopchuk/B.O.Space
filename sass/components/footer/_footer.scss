@@ -29,6 +29,9 @@
     font-size: 22px;
     font-weight: 400;
     line-height: 1.227;
+
+    transition: text-shadow var(--animation-time) var(--cubic),
+      opacity var(--animation-time) var(--cubic);
   }
 
   &__link:hover,

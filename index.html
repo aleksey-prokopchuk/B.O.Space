@@ -15,24 +15,42 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <script src="./js/jquery-3.7.1.min.js"></script>
     <title>B.O.Space</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="top">
       <div class="header__container container">
-        <img class="logo" src="./images/svg/logo.svg" alt="" />
-        <nav class="nav">
-          <ul class="nav__list list-no-marker">
-            <li class="nav__item"><a class="nav__link link-no-decor" href="#">Про нас</a></li>
-            <li class="nav__item"><a class="nav__link link-no-decor" href="#">Ціни</a></li>
-            <li class="nav__item"><a class="nav__link link-no-decor" href="#">Наші учні</a></li>
-            <li class="nav__item"><a class="nav__link link-no-decor" href="#">Правила</a></li>
-            <li class="nav__item"><a class="nav__link link-no-decor" href="#">Контакти</a></li>
-          </ul>
-        </nav>
-        <a class="header__link link-no-decor" href="tel:380937231083">+380 93 723 10 83</a>
+        <a class="link-no-decor" href="#top">
+          <svg class="logo logo__header">
+            <use href="./images/svg/spryte.svg#logo"></use>
+          </svg>
+          <!-- <img class="logo__header" src="./images/svg/logo.svg" alt=""
+        /> -->
+        </a>
+        <div class="header__wrapper">
+          <nav class="nav">
+            <ul class="nav__list list-no-marker">
+              <li class="nav__item">
+                <a class="nav__link link-no-decor" href="#about">Про нас</a>
+              </li>
+              <li class="nav__item"><a class="nav__link link-no-decor" href="#price">Ціни</a></li>
+              <li class="nav__item">
+                <a class="nav__link link-no-decor" href="#pupils">Наші учні</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link link-no-decor" href="#rules">Правила</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link link-no-decor" href="#contacts">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="header__link link-no-decor" href="tel:380937231083">+380 93 723 10 83</a>
+        </div>
       </div>
     </header>
+
     <main>
       <div class="hero">
         <div class="container">
@@ -42,10 +60,11 @@
             Допоможемо усунути кордони Вашого мовного світу та дати максимальну кількість
             можливостей з використання англійської мови!
           </p>
-          <button class="hero__btn btn">Записатись на заняття</button>
+          <a href="tel:380937231083" class="link-btn link-no-decor">Записатись на заняття</a>
         </div>
       </div>
-      <div class="about">
+
+      <div class="about" id="about">
         <div class="container">
           <h2 class="title">Про нас</h2>
           <ul class="about__list list-no-marker">
@@ -81,7 +100,8 @@
           </ul>
         </div>
       </div>
-      <div class="price">
+
+      <div class="price" id="price">
         <div class="container">
           <h2 class="title">Ціни</h2>
           <div class="price__content">
@@ -174,13 +194,14 @@
           </div>
         </div>
       </div>
-      <div class="pupils">
+
+      <div class="pupils" id="pupils">
         <div class="container">
           <h2 class="title">Наші учні</h2>
           <ul class="pupils__list list-no-marker">
             <li class="pupils__item">
               <div class="pupils__img-wrapper">
-                <img class="pupils__img" src="./images/pupils/nastya.jpg" alt="Учениця" />
+                <img class="pupils__img" src="./images/pupils/timur.jpg" alt="Учениця" />
               </div>
               <div class="pupils__wrapper">
                 <h3 class="pupils__title">Тимур, 8 клас</h3>
@@ -194,9 +215,9 @@
                 </p>
               </div>
             </li>
-            <li class="pupils__item">
+            <!-- <li class="pupils__item">
               <div class="pupils__img-wrapper">
-                <img class="pupils__img" src="./images/pupils/timur.jpg" alt="Учень" />
+                <img class="pupils__img" src="./images/pupils/nastya.jpg" alt="Учень" />
               </div>
               <div class="pupils__wrapper">
                 <h3 class="pupils__title">Настя, 7 клас</h3>
@@ -208,11 +229,12 @@
                   неважко. У групі нас четверо, тому увага приділяється кожному.
                 </p>
               </div>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
-      <div class="rules">
+
+      <div class="rules" id="rules">
         <div class="container">
           <h2 class="title">Правила</h2>
           <ul class="rules__list list-no-marker">
@@ -236,26 +258,29 @@
           </ul>
         </div>
       </div>
-      <div class="contacts">
+
+      <div class="contacts" id="contacts">
         <div class="contacts__container container">
           <h2 class="title">Контакти</h2>
           <ul class="contacts__list list-no-marker">
             <li class="contacts__item">
               <a class="contacts__link link-no-decor" href="tel:380937231083"
-                ><svg class="contacts__icon" width="50px" height="50px">
-                  <use href=""></use></svg
+                ><svg class="contacts__icon">
+                  <use href="./images/svg/spryte.svg#icon-phone"></use></svg
                 >+380 93 723 10 83</a
               >
             </li>
             <li class="contacts__item">
               <a class="contacts__link link-no-decor" href="https://www.instagram.com/b.o.space_"
-                ><svg class="contacts__icon" width="50px" height="50px">
-                  <use href=""></use></svg
+                ><svg class="contacts__icon">
+                  <use href="./images/svg/spryte.svg#icon-intagram"></use></svg
                 >b.o.space_</a
               >
             </li>
           </ul>
-          <a class="contacts__link-btn link-no-decor" href="">Записатись на заняття</a>
+          <a class="link-btn link-btn__contacts link-no-decor" href="tel:380937231083"
+            >Записатись на заняття</a
+          >
           <div class="contacts__wrapper">
             <p class="contacts__content">М. Лівобережна</p>
             <p class="contacts__uppercontent">Каховська 62а (секція 5)</p>
@@ -263,8 +288,8 @@
           <div class="contacts__map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.7976903197373!2d30.5908184!3d50.46349190000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfde6b8c6a85%3A0x7ef264639bfba763!2z0LLRg9C70LjRhtGPINCa0LDRhdC-0LLRgdGM0LrQsCwgNjLQsCwg0YHQtdC60YbRltGPIDUsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1691904999401!5m2!1suk!2sua"
-              width="1200"
-              height="500"
+              width="1168"
+              height="498"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
@@ -273,25 +298,35 @@
           </div>
         </div>
       </div>
+      <!-- <div class="container"> -->
+      <div class="up up_hide"></div>
+      <!-- </div> -->
     </main>
+
     <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
-          <img class="logo__footer" src="./images/svg/logo.svg" alt="" />
+          <a class="link-no-decor" href="#top">
+            <svg class="logo logo__footer">
+              <use href="./images/svg/spryte.svg#logo"></use>
+            </svg>
+          </a>
           <div class="footer__wrapper--content">
             <ul class="footer__list list-no-marker">
               <li class="footer__item">
-                <a class="footer__link link-no-decor" href="">Про студію</a>
-              </li>
-              <li class="footer__item"><a class="footer__link link-no-decor" href="">Ціни</a></li>
-              <li class="footer__item">
-                <a class="footer__link link-no-decor" href="">Наші учні</a>
+                <a class="footer__link link-no-decor" href="#about">Про нас</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link link-no-decor" href="">Відгуки</a>
+                <a class="footer__link link-no-decor" href="#price">Ціни</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link link-no-decor" href="">Контакти</a>
+                <a class="footer__link link-no-decor" href="#pupils">Наші учні</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link link-no-decor" href="#rules">Правила</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link link-no-decor" href="#contacts">Контакти</a>
               </li>
             </ul>
             <div class="footer__wrapper--contacts">
@@ -318,4 +353,6 @@
       </div>
     </footer>
   </body>
+  <script type="module" src="./js/scroll.js"></script>
+  <script type="module" src="./js/up.js"></script>
 </html>

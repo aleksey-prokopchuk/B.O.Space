@@ -1,7 +1,11 @@
 .logo {
-  width: 99px;
-  height: 124px;
-  //   margin-right: 110px;
+  // display: block;
+  fill: var(--white-txt-color);
+  &__header {
+    width: 99px;
+    height: 124px;
+    margin-right: 110px;
+  }
 
   &__footer {
     width: 148px;
