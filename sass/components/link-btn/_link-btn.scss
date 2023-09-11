@@ -14,7 +14,13 @@
 
 .link-btn {
   display: inline-block;
-  padding: 26px 81px;
+  padding: 26px 60px;
+  @include mq(mobile) {
+    padding: 26px 71px;
+  }
+  @include mq(tablet) {
+    padding: 26px 81px;
+  }
   border-radius: 20px;
 
   background: var(--bg-color-btn);

@@ -1,6 +1,16 @@
 .header {
-  padding-top: 23px;
-  padding-bottom: 23px;
+  @include mq(mobile) {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  @include mq(tablet) {
+    padding-top: 34px;
+    padding-bottom: 34px;
+  }
+  @include mq(desktop) {
+    padding-top: 23px;
+    padding-bottom: 23px;
+  }
 
   border-radius: 0px 0px 30px 30px;
   background: var(--gradient-stroke);
@@ -17,7 +27,12 @@
     align-items: center;
     justify-content: space-between;
 
-    width: 991px;
+    @include mq(tablet) {
+      width: 607px;
+    }
+    @include mq(desktop) {
+      width: 991px;
+    }
   }
 
   &__link {
@@ -31,6 +46,24 @@
 
     transition: text-shadow var(--animation-time) var(--cubic),
       opacity var(--animation-time) var(--cubic);
+
+    @include mq(tablet-only) {
+      display: none;
+    }
+    // @include mq(desktop) {
+    //   display: block;
+    // }
+  }
+  &__link-img {
+    display: none;
+    @include mq(tablet-only) {
+      display: block;
+    }
+  }
+  &__img {
+    width: 60px;
+    height: 60px;
+    fill: var(--white-txt-color);
   }
   &__link:hover,
   &__link:focus {

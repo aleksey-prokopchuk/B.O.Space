@@ -47,13 +47,18 @@
             </ul>
           </nav>
           <a class="header__link link-no-decor" href="tel:380937231083">+380 93 723 10 83</a>
+          <a class="header__link-img link-no-decor" href="tel:380937231083">
+            <svg class="header__img">
+              <use href="./images/svg/spryte.svg#icon-phone-header"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </header>
 
     <main>
       <div class="hero">
-        <div class="container">
+        <div class="hero__container container">
           <h1 class="hero__title">Broad Opportunities Space</h1>
           <h2 class="hero__subtitle">Простір широких можливостей</h2>
           <p class="hero__content">
@@ -69,32 +74,201 @@
           <h2 class="title">Про нас</h2>
           <ul class="about__list list-no-marker">
             <li class="about__item">
-              <img class="about__img" src="./images/about/levels.jpg" alt="читання книги" />
+              <picture>
+                <source
+                  srcset="./images/about/levels_lg.webp 1x, ./images/about/levels_lg@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/about/levels_lg.jpg 1x, ./images/about/levels_lg@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="./images/about/levels_md.webp 1x, ./images/about/levels_md@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/about/levels_md.jpg 1x, ./images/about/levels_md@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="./images/about/levels_sm.webp 1x, ./images/about/levels_sm@2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/about/levels_sm.jpg 1x, ./images/about/levels_sm@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                />
+                <img class="about__img" src="./images/about/levels_sm.jpg" alt="читання книги" />
+              </picture>
               Рівні англійської<br />
               від Beginner до Advanced
             </li>
             <li class="about__item">
               Індивідуальні та групові заняття
-              <img
-                class="about__img about__img--r"
-                src="./images/about/lesson.jpg"
-                alt="групове заняття"
-              />
+              <picture>
+                <source
+                  srcset="./images/about/lesson_lg.webp 1x, ./images/about/lesson_lg@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/about/lesson_lg.jpg 1x, ./images/about/lesson_lg@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="./images/about/lesson_md.webp 1x, ./images/about/lesson_md@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/about/lesson_md.jpg 1x, ./images/about/lesson_md@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="./images/about/lesson_sm.webp 1x, ./images/about/lesson_sm@2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/about/lesson_sm.jpg 1x, ./images/about/lesson_sm@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                />
+                <img
+                  class="about__img about__img--r"
+                  src="./images/about/lesson_sm.jpg"
+                  alt="групове заняття"
+                />
+              </picture>
             </li>
             <li class="about__item">
-              <img class="about__img" src="./images/about/children.jpg" alt="навчаються діти" />
+              <picture>
+                <source
+                  srcset="./images/about/children_lg.webp 1x, ./images/about/children_lg@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/about/children_lg.jpg 1x, ./images/about/children_lg@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="./images/about/children_md.webp 1x, ./images/about/children_md@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/about/children_md.jpg 1x, ./images/about/children_md@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="./images/about/children_sm.webp 1x, ./images/about/children_sm@2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/about/children_sm.jpg 1x, ./images/about/children_sm@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                />
+                <img
+                  class="about__img"
+                  src="./images/about/children_sm.jpg"
+                  alt="навчаються діти"
+                />
+              </picture>
               Діти (від 5 років) та дорослі
             </li>
             <li class="about__item">
               Індивідуальний графік навчання
-              <img class="about__img about__img--r" src="./images/about/graph.jpg" alt="календар" />
+              <picture>
+                <source
+                  srcset="./images/about/graph_lg.webp 1x, ./images/about/graph_lg@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/about/graph_lg.jpg 1x, ./images/about/graph_lg@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="./images/about/graph_md.webp 1x, ./images/about/graph_md@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/about/graph_md.jpg 1x, ./images/about/graph_md@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="./images/about/graph_sm.webp 1x, ./images/about/graph_sm@2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/about/graph_sm.jpg 1x, ./images/about/graph_sm@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                />
+                <img
+                  class="about__img about__img--r"
+                  src="./images/about/graph_sm.jpg"
+                  alt="календар"
+                />
+              </picture>
             </li>
             <li class="about__item">
-              <img
-                class="about__img"
-                src="./images/about/online.jpg"
-                alt="працюють за комп'ютером"
-              />
+              <picture>
+                <source
+                  srcset="./images/about/online_lg.webp 1x, ./images/about/online_lg@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/about/online_lg.jpg 1x, ./images/about/online_lg@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="./images/about/online_md.webp 1x, ./images/about/online_md@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/about/online_md.jpg 1x, ./images/about/online_md@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="./images/about/online_sm.webp 1x, ./images/about/online_sm@2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/about/online_sm.jpg 1x, ./images/about/online_sm@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                />
+                <img
+                  class="about__img"
+                  src="./images/about/online_sm.jpg"
+                  alt="працюють за комп'ютером"
+                />
+              </picture>
+
               Онлайн та офлайн формат
             </li>
           </ul>

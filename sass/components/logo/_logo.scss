@@ -2,15 +2,41 @@
   // display: block;
   fill: var(--white-txt-color);
   &__header {
-    width: 99px;
-    height: 124px;
-    margin-right: 110px;
+    @include mq(mobile) {
+      width: 47px;
+      height: 60px;
+      margin-right: 110px;
+    }
+    @include mq(tablet) {
+      width: 60px;
+      height: 76px;
+      margin-right: 36px;
+    }
+    @include mq(desktop) {
+      width: 99px;
+      height: 124px;
+      margin-right: 110px;
+    }
   }
 
   &__footer {
-    width: 148px;
-    height: 186px;
+    @include mq(mobile) {
+      width: 60px;
+      height: 75px;
 
-    margin-right: 80px;
+      // margin-right: 40px;
+    }
+    @include mq(tablet) {
+      width: 158px;
+      height: 199px;
+
+      margin-right: 40px;
+    }
+    @include mq(desktop) {
+      width: 148px;
+      height: 186px;
+
+      margin-right: 80px;
+    }
   }
 }
