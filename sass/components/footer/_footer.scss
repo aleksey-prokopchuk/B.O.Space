@@ -1,12 +1,20 @@
 .footer {
-  padding: 90px 0;
+  padding: 40px 0;
   background: var(--footer-gradient);
+
+  @include mq(mobile) {
+  }
+  @include mq(tablet) {
+    padding: 60px 0;
+  }
+  @include mq(desktop) {
+    padding: 90px 0;
+  }
   &__wrapper {
     display: flex;
     &--content {
       display: flex;
       justify-content: space-between;
-      // align-content: space-between;
 
       width: 795px;
     }
@@ -14,24 +22,56 @@
     }
   }
   &__list {
+    text-align: center;
     &--contacts {
+      display: none;
       text-align: right;
+      @include mq(tablet) {
+        display: block;
+      }
+    }
+    @include mq(desktop) {
+      text-align-last: left;
+    }
+
+    &--contacts-img {
+      display: flex;
+      flex-direction: column;
     }
   }
   &__item {
   }
   &__item:not(:last-child) {
-    margin-bottom: 16px;
+    margin-bottom: 10px;
+
+    @include mq(tablet) {
+      margin-bottom: 16px;
+    }
   }
   &__link {
     color: var(--white-txt-color);
 
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 1.227;
+    line-height: 1.222;
 
     transition: text-shadow var(--animation-time) var(--cubic),
       opacity var(--animation-time) var(--cubic);
+
+    @include mq(mobile) {
+    }
+    @include mq(tablet) {
+      font-size: 22px;
+      line-height: 1.227;
+    }
+    @include mq(desktop) {
+    }
+  }
+
+  &__link-img {
+    @include mq(tablet) {
+      display: none;
+    }
   }
 
   &__link:hover,
@@ -44,6 +84,8 @@
   }
 
   &__content {
+    display: none;
+
     margin-bottom: 30px;
     color: var(--white-txt-color);
     text-align: right;
@@ -52,16 +94,36 @@
     line-height: normal;
     letter-spacing: 0.33px;
     text-decoration-line: underline;
+
+    @include mq(desktop) {
+      display: block;
+    }
   }
+
+  &__img {
+    fill: var(--white-txt-color);
+    width: 60px;
+    height: 60px;
+  }
+
   &__copyright {
-    margin-top: 10px;
+    margin-top: 30px;
     color: var(--white-txt-color);
 
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 1.25;
+    line-height: 1.214;
 
     opacity: 0.6;
+
+    @include mq(mobile) {
+    }
+    @include mq(tablet) {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+    @include mq(desktop) {
+    }
   }
 }

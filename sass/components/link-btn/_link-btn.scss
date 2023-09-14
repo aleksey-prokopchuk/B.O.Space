@@ -14,27 +14,37 @@
 
 .link-btn {
   display: inline-block;
-  padding: 26px 60px;
-  @include mq(mobile) {
-    padding: 26px 71px;
-  }
-  @include mq(tablet) {
-    padding: 26px 81px;
-  }
+  padding: 26px 45px;
   border-radius: 20px;
 
   background: var(--bg-color-btn);
   color: var(--white-txt-color);
 
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 1.227;
   letter-spacing: 0.33px;
 
   transition: color var(--animation-time) var(--cubic),
     background var(--animation-time) var(--cubic), box-shadow var(--animation-time) var(--cubic);
+  @include mq(mobile) {
+    padding: 26px 60px;
+    font-size: 22px;
+    padding: 26px 69px;
+  }
+  @include mq(tablet) {
+    padding: 26px 81px;
+  }
   &__contacts {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
+
+    @include mq(mobile) {
+    }
+    @include mq(tablet) {
+      margin-bottom: 80px;
+    }
+    @include mq(desktop) {
+    }
   }
 }
 .link-btn:hover,

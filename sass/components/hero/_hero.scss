@@ -13,8 +13,8 @@
   }
 
   // background-size: cover;
-  // background-image: url(../images/hero/bg-hero_lg.jpg);
-  // background-image: -webkit-image-set(url(../images/hero/bg-hero_lg.webp) 1x);
+  background-image: url(../images/hero/bg-hero_sm.jpg);
+  background-image: -webkit-image-set(url(../images/hero/bg-hero.webp) 1x);
   // @include mq(retina) {
   //   background-image: url(../images/hero/bg-hero_lg@2x.jpg);
   //   background-image: -webkit-image-set(url(../images/hero/bg-hero_lg@2x.webp) 2x);
@@ -49,10 +49,11 @@
   // background-size: cover;
 
   &__container {
-    padding-top: 297px;
+    padding-top: 225px;
 
     text-align: center;
     @include mq(mobile) {
+      padding-top: 297px;
     }
     @include mq(tablet) {
       padding-top: 516px;
@@ -70,12 +71,13 @@
     margin-bottom: 10px;
 
     text-align: center;
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 700;
     line-height: 1.231;
     letter-spacing: 0.52px;
 
     @include mq(mobile) {
+      font-size: 26px;
     }
     @include mq(tablet) {
       margin-bottom: 20px;
@@ -91,13 +93,16 @@
     }
   }
   &__subtitle {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 
+    font-size: 18px;
     text-align: center;
     font-weight: 400;
     line-height: 1.2;
     color: var(--accent-color);
     @include mq(mobile) {
+      margin-bottom: 20px;
+      font-size: 20px;
     }
     @include mq(tablet) {
       margin-bottom: 40px;

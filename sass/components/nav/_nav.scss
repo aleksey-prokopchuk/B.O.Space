@@ -1,6 +1,7 @@
 .nav {
   //   margin-right: 111px;
   &__list {
+    display: none;
     @include mq(mobile) {
     }
     @include mq(tablet) {

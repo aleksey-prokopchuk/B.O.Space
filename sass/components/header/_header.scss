@@ -1,4 +1,6 @@
 .header {
+  padding-top: 15px;
+  padding-bottom: 15px;
   @include mq(mobile) {
     padding-top: 21px;
     padding-bottom: 21px;
@@ -18,8 +20,8 @@
 
   &__container {
     display: flex;
-
     align-items: center;
+    justify-content: space-between;
   }
 
   &__wrapper {
@@ -36,6 +38,7 @@
   }
 
   &__link {
+    display: none;
     padding-top: 10px;
     padding-bottom: 10px;
     color: var(--white-txt-color);
@@ -47,23 +50,28 @@
     transition: text-shadow var(--animation-time) var(--cubic),
       opacity var(--animation-time) var(--cubic);
 
-    @include mq(tablet-only) {
-      display: none;
+    @include mq(desktop) {
+      display: block;
     }
     // @include mq(desktop) {
     //   display: block;
     // }
   }
   &__link-img {
-    display: none;
-    @include mq(tablet-only) {
-      display: block;
+    display: block;
+    @include mq(desktop) {
+      display: none;
     }
   }
   &__img {
-    width: 60px;
-    height: 60px;
+    width: 51px;
+    height: 51px;
     fill: var(--white-txt-color);
+
+    @include mq(mobile) {
+      width: 60px;
+      height: 60px;
+    }
   }
   &__link:hover,
   &__link:focus {

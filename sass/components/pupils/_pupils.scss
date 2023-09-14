@@ -1,10 +1,13 @@
 .pupils {
-  padding-top: 80px;
+  padding-top: 40px;
 
   background-image: url(../images/pupils/pupils-bg.png);
   background-repeat: no-repeat;
   background-position: center;
 
+  @include mq(tablet) {
+    padding-top: 80px;
+  }
   &__list {
   }
   &__item {
@@ -13,42 +16,113 @@
     width: 980px;
     margin-left: auto;
     margin-right: auto;
+
+    @include mq(mobile) {
+    }
+    @include mq(tablet) {
+    }
+    @include mq(desktop) {
+    }
   }
 
   &__img-wrapper {
-    margin-right: 60px;
-    padding: 11px;
+    margin-right: 20px;
+    padding: 3px;
 
-    width: 290px;
-    height: 290px;
-    flex-shrink: 0;
-    border-radius: 40px;
+    width: 81px;
+    height: 81px;
+    border-radius: 14px;
     border: 1px solid var(--border-color);
+
+    @include mq(mobile) {
+    }
+    @include mq(tablet) {
+      margin-right: 30px;
+      padding: 7px;
+
+      width: 225px;
+      height: 225px;
+      border-radius: 35px;
+    }
+    @include mq(desktop) {
+      margin-right: 20px;
+      padding: 10px;
+      width: 290px;
+      height: 290px;
+      border-radius: 40px;
+    }
   }
   &__img {
-    width: 268px;
-    height: 268px;
-    border-radius: 30px;
+    width: 73px;
+    height: 73px;
+    border-radius: 15px;
+
+    @include mq(mobile) {
+    }
+    @include mq(tablet) {
+      width: 209px;
+      height: 209px;
+      border-radius: 30px;
+    }
+    @include mq(desktop) {
+      width: 268px;
+      height: 268px;
+    }
   }
   &__wrapper {
   }
   &__title {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 700;
-    line-height: 1.225;
-    letter-spacing: 0.8px;
+    line-height: 1.2;
 
     color: var(--title-txt-color);
+
+    @include mq(mobile) {
+    }
+    @include mq(tablet) {
+      margin-bottom: 30px;
+      font-size: 26px;
+      line-height: 1.23;
+    }
+    @include mq(desktop) {
+      margin-bottom: 50px;
+
+      font-size: 40px;
+      line-height: 1.225;
+      letter-spacing: 0.8px;
+    }
   }
   &__content {
-    width: 630px;
-    font-size: 22px;
+    width: 296px;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 1.227;
+    line-height: 1.222;
+
     &--margin {
-      margin-bottom: 27px;
+      margin-bottom: 18px;
+    }
+    @include mq(mobile) {
+    }
+    @include mq(tablet) {
+      width: 436px;
+      font-size: 20px;
+
+      &--margin {
+        margin-bottom: 20px;
+      }
+    }
+    @include mq(desktop) {
+      width: 630px;
+
+      font-size: 22px;
+      line-height: 1.227;
+
+      &--margin {
+        margin-bottom: 27px;
+      }
     }
   }
 }

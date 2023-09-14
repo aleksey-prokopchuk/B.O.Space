@@ -12,15 +12,17 @@ body {
 }
 
 .title {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
   text-align: center;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 700;
   line-height: 1.233;
   letter-spacing: 0.45px;
 
   @include mq(mobile) {
+    margin-bottom: 30px;
+    font-size: 30px;
   }
   @include mq(tablet) {
     margin-bottom: 40px;
