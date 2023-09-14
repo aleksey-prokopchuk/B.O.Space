@@ -373,103 +373,319 @@
         <div class="container">
           <h2 class="title">Наші учні</h2>
 
-          <swiper-container
-            class="mySwiper"
-            navigation="true"
-            space-between="100"
-            centered-slides="true"
-            autoplay-delay="4000"
-            autoplay-disable-on-interaction="false"
-          >
-            <swiper-slide>
-              <div class="pupils__item">
-                <div class="pupils__img-wrapper">
-                  <img class="pupils__img" src="./images/pupils/timur.jpg" alt="Учениця" />
+          <div class="pupils__swiper pupils__swiper--mobile">
+            <swiper-container
+              class="mySwiper"
+              space-between="30"
+              centered-slides="true"
+              autoplay-delay="4000"
+              autoplay-disable-on-interaction="false"
+              loop="true"
+            >
+              <swiper-slide>
+                <div class="pupils__item">
+                  <div class="pupils__img-wrapper">
+                    <img class="pupils__img" src="./images/pupils/timur.jpg" alt="Учениця" />
+                  </div>
+                  <div class="pupils__wrapper">
+                    <h3 class="pupils__title">Тимур, 8 клас</h3>
+                    <p class="pupils__content pupils__content--margin">
+                      В школі стало набагато легше засвоювати матеріал, бо багато тем вже знайомі
+                      після індивідуальних занять.
+                    </p>
+                    <p class="pupils__content">
+                      Після року навчання поїхав до англомовного табору та відчував там себе
+                      комфортно, не маючи мовних барʼєрів з носіями мови.
+                    </p>
+                  </div>
                 </div>
-                <div class="pupils__wrapper">
-                  <h3 class="pupils__title">Тимур, 8 клас</h3>
-                  <p class="pupils__content pupils__content--margin">
-                    В школі стало набагато легше засвоювати матеріал, бо багато тем вже знайомі
-                    після індивідуальних занять.
-                  </p>
-                  <p class="pupils__content">
-                    Після року навчання поїхав до англомовного табору та відчував там себе
-                    комфортно, не маючи мовних барʼєрів з носіями мови.
-                  </p>
+              </swiper-slide>
+              <swiper-slide>
+                <li class="pupils__item">
+                  <div class="pupils__img-wrapper">
+                    <img class="pupils__img" src="./images/pupils/nastya.jpg" alt="Учень" />
+                  </div>
+                  <div class="pupils__wrapper">
+                    <h3 class="pupils__title">Настя, 7 клас</h3>
+                    <p class="pupils__content pupils__content--margin">
+                      Я планую після школи навчання закордоном, тому англійська дуже важлива для
+                      мене.
+                    </p>
+                    <p class="pupils__content">
+                      Читання, аудіювання, розмовний - ми працюємо над всіма напрямками, тому
+                      навчатися неважко. У групі нас четверо, тому увага приділяється кожному.
+                    </p>
+                  </div>
+                </li>
+              </swiper-slide>
+              <swiper-slide>
+                <li class="pupils__item">
+                  <div class="pupils__img-wrapper">
+                    <img
+                      class="pupils__img"
+                      src="./images/pupils/masha.jpg"
+                      alt="Учениця з книгою"
+                    />
+                  </div>
+                  <div class="pupils__wrapper">
+                    <h3 class="pupils__title">Маша, чемпіонка України з шахів</h3>
+                    <p class="pupils__content pupils__content--margin">
+                      Англійська для подорожей - перша річ, що завжди має бути. Будь-яка країна, Вас
+                      зрозуміють, Ви зрозумієте. У мене турніри з шахів відбуваються все частіше в
+                      Європі, спілкування в більшості англійською, тому вдосконалення немає меж.
+                    </p>
+                    <p class="pupils__content"></p>
+                  </div>
+                </li>
+              </swiper-slide>
+              <swiper-slide>
+                <li class="pupils__item">
+                  <div class="pupils__img-wrapper">
+                    <img class="pupils__img" src="./images/pupils/sasha.jpg" alt="Учень з книгою" />
+                  </div>
+                  <div class="pupils__wrapper">
+                    <h3 class="pupils__title">Саша, випускник 2023</h3>
+                    <p class="pupils__content pupils__content--margin">
+                      «З дитячих років батьки казали, що англійська знадобиться у будь-якій
+                      професії. Зараз я щасливий, що приділяв мові достатньо уваги, здав незалежні
+                      тести та обрав IT спеціальність, де англійська використовується кожного дня.
+                    </p>
+                    <p class="pupils__content"></p>
+                  </div>
+                </li>
+              </swiper-slide>
+              <swiper-slide>
+                <li class="pupils__item">
+                  <div class="pupils__img-wrapper">
+                    <img
+                      class="pupils__img"
+                      src="./images/pupils/timofiy.jpg"
+                      alt="Учень навчається"
+                    />
+                  </div>
+                  <div class="pupils__wrapper">
+                    <h3 class="pupils__title">Тимофій, 10 років</h3>
+                    <p class="pupils__content pupils__content--margin">
+                      Виявляється, вчитись треба не тільки у школі))
+                    </p>
+                    <p class="pupils__content">
+                      Англійська мені цікава, бо ми читаємо, граємо, щось повторюємо. Отримуємо
+                      наклейки на домашнє завдання, це круто.
+                    </p>
+                  </div>
+                </li>
+              </swiper-slide>
+            </swiper-container>
+          </div>
+          <div class="pupils__swiper pupils__swiper--tablet">
+            <swiper-container
+              class="mySwiper"
+              space-between="30"
+              centered-slides="true"
+              autoplay-delay="4000"
+              autoplay-disable-on-interaction="false"
+              loop="true"
+            >
+              <swiper-slide>
+                <div class="pupils__item">
+                  <div class="pupils__img-wrapper">
+                    <img class="pupils__img" src="./images/pupils/timur.jpg" alt="Учениця" />
+                  </div>
+                  <div class="pupils__wrapper">
+                    <h3 class="pupils__title">Тимур, 8 клас</h3>
+                    <p class="pupils__content pupils__content--margin">
+                      В школі стало набагато легше засвоювати матеріал, бо багато тем вже знайомі
+                      після індивідуальних занять.
+                    </p>
+                    <p class="pupils__content">
+                      Після року навчання поїхав до англомовного табору та відчував там себе
+                      комфортно, не маючи мовних барʼєрів з носіями мови.
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </swiper-slide>
-            <swiper-slide>
-              <li class="pupils__item">
-                <div class="pupils__img-wrapper">
-                  <img class="pupils__img" src="./images/pupils/nastya.jpg" alt="Учень" />
+              </swiper-slide>
+              <swiper-slide>
+                <li class="pupils__item">
+                  <div class="pupils__img-wrapper">
+                    <img class="pupils__img" src="./images/pupils/nastya.jpg" alt="Учень" />
+                  </div>
+                  <div class="pupils__wrapper">
+                    <h3 class="pupils__title">Настя, 7 клас</h3>
+                    <p class="pupils__content pupils__content--margin">
+                      Я планую після школи навчання закордоном, тому англійська дуже важлива для
+                      мене.
+                    </p>
+                    <p class="pupils__content">
+                      Читання, аудіювання, розмовний - ми працюємо над всіма напрямками, тому
+                      навчатися неважко. У групі нас четверо, тому увага приділяється кожному.
+                    </p>
+                  </div>
+                </li>
+              </swiper-slide>
+              <swiper-slide>
+                <li class="pupils__item">
+                  <div class="pupils__img-wrapper">
+                    <img
+                      class="pupils__img"
+                      src="./images/pupils/masha.jpg"
+                      alt="Учениця з книгою"
+                    />
+                  </div>
+                  <div class="pupils__wrapper">
+                    <h3 class="pupils__title">Маша, чемпіонка України з шахів</h3>
+                    <p class="pupils__content pupils__content--margin">
+                      Англійська для подорожей - перша річ, що завжди має бути. Будь-яка країна, Вас
+                      зрозуміють, Ви зрозумієте. У мене турніри з шахів відбуваються все частіше в
+                      Європі, спілкування в більшості англійською, тому вдосконалення немає меж.
+                    </p>
+                    <p class="pupils__content"></p>
+                  </div>
+                </li>
+              </swiper-slide>
+              <swiper-slide>
+                <li class="pupils__item">
+                  <div class="pupils__img-wrapper">
+                    <img class="pupils__img" src="./images/pupils/sasha.jpg" alt="Учень з книгою" />
+                  </div>
+                  <div class="pupils__wrapper">
+                    <h3 class="pupils__title">Саша, випускник 2023</h3>
+                    <p class="pupils__content pupils__content--margin">
+                      «З дитячих років батьки казали, що англійська знадобиться у будь-якій
+                      професії. Зараз я щасливий, що приділяв мові достатньо уваги, здав незалежні
+                      тести та обрав IT спеціальність, де англійська використовується кожного дня.
+                    </p>
+                    <p class="pupils__content"></p>
+                  </div>
+                </li>
+              </swiper-slide>
+              <swiper-slide>
+                <li class="pupils__item">
+                  <div class="pupils__img-wrapper">
+                    <img
+                      class="pupils__img"
+                      src="./images/pupils/timofiy.jpg"
+                      alt="Учень навчається"
+                    />
+                  </div>
+                  <div class="pupils__wrapper">
+                    <h3 class="pupils__title">Тимофій, 10 років</h3>
+                    <p class="pupils__content pupils__content--margin">
+                      Виявляється, вчитись треба не тільки у школі))
+                    </p>
+                    <p class="pupils__content">
+                      Англійська мені цікава, бо ми читаємо, граємо, щось повторюємо. Отримуємо
+                      наклейки на домашнє завдання, це круто.
+                    </p>
+                  </div>
+                </li>
+              </swiper-slide>
+            </swiper-container>
+          </div>
+          <div class="pupils__swiper pupils__swiper--desktop">
+            <swiper-container
+              class="mySwiper"
+              navigation="true"
+              space-between="30"
+              centered-slides="false"
+              autoplay-delay="4000"
+              autoplay-disable-on-interaction="false"
+              loop="true"
+            >
+              <swiper-slide>
+                <div class="pupils__item">
+                  <div class="pupils__img-wrapper">
+                    <img class="pupils__img" src="./images/pupils/timur.jpg" alt="Учениця" />
+                  </div>
+                  <div class="pupils__wrapper">
+                    <h3 class="pupils__title">Тимур, 8 клас</h3>
+                    <p class="pupils__content pupils__content--margin">
+                      В школі стало набагато легше засвоювати матеріал, бо багато тем вже знайомі
+                      після індивідуальних занять.
+                    </p>
+                    <p class="pupils__content">
+                      Після року навчання поїхав до англомовного табору та відчував там себе
+                      комфортно, не маючи мовних барʼєрів з носіями мови.
+                    </p>
+                  </div>
                 </div>
-                <div class="pupils__wrapper">
-                  <h3 class="pupils__title">Настя, 7 клас</h3>
-                  <p class="pupils__content pupils__content--margin">
-                    Я планую після школи навчання закордоном, тому англійська дуже важлива для мене.
-                  </p>
-                  <p class="pupils__content">
-                    Читання, аудіювання, розмовний - ми працюємо над всіма напрямками, тому
-                    навчатися неважко. У групі нас четверо, тому увага приділяється кожному.
-                  </p>
-                </div>
-              </li>
-            </swiper-slide>
-            <swiper-slide>
-              <li class="pupils__item">
-                <div class="pupils__img-wrapper">
-                  <img class="pupils__img" src="./images/pupils/masha.jpg" alt="Учениця з книгою" />
-                </div>
-                <div class="pupils__wrapper">
-                  <h3 class="pupils__title">Маша, чемпіонка України з шахів</h3>
-                  <p class="pupils__content pupils__content--margin">
-                    Англійська для подорожей - перша річ, що завжди має бути. Будь-яка країна, Вас
-                    зрозуміють, Ви зрозумієте. У мене турніри з шахів відбуваються все частіше в
-                    Європі, спілкування в більшості англійською, тому вдосконалення немає меж.
-                  </p>
-                  <p class="pupils__content"></p>
-                </div>
-              </li>
-            </swiper-slide>
-            <swiper-slide>
-              <li class="pupils__item">
-                <div class="pupils__img-wrapper">
-                  <img class="pupils__img" src="./images/pupils/sasha.jpg" alt="Учень з книгою" />
-                </div>
-                <div class="pupils__wrapper">
-                  <h3 class="pupils__title">Саша, випускник 2023</h3>
-                  <p class="pupils__content pupils__content--margin">
-                    «З дитячих років батьки казали, що англійська знадобиться у будь-якій професії.
-                    Зараз я щасливий, що приділяв мові достатньо уваги, здав незалежні тести та
-                    обрав IT спеціальність, де англійська використовується кожного дня.
-                  </p>
-                  <p class="pupils__content"></p>
-                </div>
-              </li>
-            </swiper-slide>
-            <swiper-slide>
-              <li class="pupils__item">
-                <div class="pupils__img-wrapper">
-                  <img
-                    class="pupils__img"
-                    src="./images/pupils/timofiy.jpg"
-                    alt="Учень навчається"
-                  />
-                </div>
-                <div class="pupils__wrapper">
-                  <h3 class="pupils__title">Тимофій, 10 років</h3>
-                  <p class="pupils__content pupils__content--margin">
-                    Виявляється, вчитись треба не тільки у школі))
-                  </p>
-                  <p class="pupils__content">
-                    Англійська мені цікава, бо ми читаємо, граємо, щось повторюємо. Отримуємо
-                    наклейки на домашнє завдання, це круто.
-                  </p>
-                </div>
-              </li>
-            </swiper-slide>
-          </swiper-container>
+              </swiper-slide>
+              <swiper-slide>
+                <li class="pupils__item">
+                  <div class="pupils__img-wrapper">
+                    <img class="pupils__img" src="./images/pupils/nastya.jpg" alt="Учень" />
+                  </div>
+                  <div class="pupils__wrapper">
+                    <h3 class="pupils__title">Настя, 7 клас</h3>
+                    <p class="pupils__content pupils__content--margin">
+                      Я планую після школи навчання закордоном, тому англійська дуже важлива для
+                      мене.
+                    </p>
+                    <p class="pupils__content">
+                      Читання, аудіювання, розмовний - ми працюємо над всіма напрямками, тому
+                      навчатися неважко. У групі нас четверо, тому увага приділяється кожному.
+                    </p>
+                  </div>
+                </li>
+              </swiper-slide>
+              <swiper-slide>
+                <li class="pupils__item">
+                  <div class="pupils__img-wrapper">
+                    <img
+                      class="pupils__img"
+                      src="./images/pupils/masha.jpg"
+                      alt="Учениця з книгою"
+                    />
+                  </div>
+                  <div class="pupils__wrapper">
+                    <h3 class="pupils__title">Маша, чемпіонка України з шахів</h3>
+                    <p class="pupils__content pupils__content--margin">
+                      Англійська для подорожей - перша річ, що завжди має бути. Будь-яка країна, Вас
+                      зрозуміють, Ви зрозумієте. У мене турніри з шахів відбуваються все частіше в
+                      Європі, спілкування в більшості англійською, тому вдосконалення немає меж.
+                    </p>
+                    <p class="pupils__content"></p>
+                  </div>
+                </li>
+              </swiper-slide>
+              <swiper-slide>
+                <li class="pupils__item">
+                  <div class="pupils__img-wrapper">
+                    <img class="pupils__img" src="./images/pupils/sasha.jpg" alt="Учень з книгою" />
+                  </div>
+                  <div class="pupils__wrapper">
+                    <h3 class="pupils__title">Саша, випускник 2023</h3>
+                    <p class="pupils__content pupils__content--margin">
+                      «З дитячих років батьки казали, що англійська знадобиться у будь-якій
+                      професії. Зараз я щасливий, що приділяв мові достатньо уваги, здав незалежні
+                      тести та обрав IT спеціальність, де англійська використовується кожного дня.
+                    </p>
+                    <p class="pupils__content"></p>
+                  </div>
+                </li>
+              </swiper-slide>
+              <swiper-slide>
+                <li class="pupils__item">
+                  <div class="pupils__img-wrapper">
+                    <img
+                      class="pupils__img"
+                      src="./images/pupils/timofiy.jpg"
+                      alt="Учень навчається"
+                    />
+                  </div>
+                  <div class="pupils__wrapper">
+                    <h3 class="pupils__title">Тимофій, 10 років</h3>
+                    <p class="pupils__content pupils__content--margin">
+                      Виявляється, вчитись треба не тільки у школі))
+                    </p>
+                    <p class="pupils__content">
+                      Англійська мені цікава, бо ми читаємо, граємо, щось повторюємо. Отримуємо
+                      наклейки на домашнє завдання, це круто.
+                    </p>
+                  </div>
+                </li>
+              </swiper-slide>
+            </swiper-container>
+          </div>
 
           <!-- <ul class="pupils__list list-no-marker">
             <li class="pupils__item">
@@ -563,8 +779,7 @@
           <div class="contacts__map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.7976903197373!2d30.5908184!3d50.46349190000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfde6b8c6a85%3A0x7ef264639bfba763!2z0LLRg9C70LjRhtGPINCa0LDRhdC-0LLRgdGM0LrQsCwgNjLQsCwg0YHQtdC60YbRltGPIDUsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1691904999401!5m2!1suk!2sua"
-              width="1168"
-              height="498"
+              width="100%"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"

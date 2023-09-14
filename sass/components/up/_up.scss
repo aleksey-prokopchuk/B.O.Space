@@ -8,15 +8,23 @@
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
 
-  width: 117px;
-  height: 60px;
+  width: 77px;
+  height: 39px;
 
   background-color: var(--title-txt-color-opacity-50);
 
   cursor: pointer;
-  background-image: url('../images/svg/up.svg');
+  background-image: url('../images/svg/up_sm.svg');
   background-repeat: no-repeat;
   background-position: 9px 10px;
+  @include mq(tablet) {
+    padding: 10px;
+
+    width: 117px;
+    height: 60px;
+
+    background-image: url('../images/svg/up_lg.svg');
+  }
 }
 
 .up_hide {

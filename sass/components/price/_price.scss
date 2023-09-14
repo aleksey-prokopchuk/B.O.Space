@@ -103,12 +103,14 @@
   }
 
   &__wrapper {
-    padding: 40px;
+    padding: 15px;
     border: solid 1px var(--accent-color);
-    border-radius: 40px;
+    border-radius: 30px;
     background: var(--white-txt-color);
 
     @include mq(mobile) {
+      padding: 40px;
+      border-radius: 40px;
     }
     @include mq(tablet) {
       padding: 52px 119px;
@@ -144,29 +146,35 @@
     &--decorate::after {
       content: '';
       display: block;
-      margin-top: 53px;
-      margin-bottom: 57px;
-      width: 310px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      width: auto;
       height: 1px;
       background-image: url(../images/price/decorate-line-price.svg);
+      background-repeat: no-repeat;
       @include mq(mobile) {
+        margin-top: 53px;
+        margin-bottom: 57px;
+
+        background-image: url(../images/price/decorate-line-price_sm.svg);
       }
       @include mq(tablet) {
-        width: auto;
         margin-top: 72px;
         margin-bottom: 72px;
+        background-image: url(../images/price/decorate-line-price_md.svg);
       }
       @include mq(desktop) {
         margin-top: 88px;
         margin-bottom: 79px;
+        background-image: url(../images/price/decorate-line-price_lg.svg);
       }
     }
   }
   &__item {
     position: relative;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
-    line-height: 1.227;
+    line-height: 1.2;
 
     @include mq(mobile) {
       font-size: 22px;
@@ -181,7 +189,7 @@
     &--span {
       color: var(--2, #1a6d90);
       text-align: right;
-      font-size: 18px;
+      font-size: 17px;
       font-weight: 300;
       letter-spacing: 0.4px;
 
@@ -200,21 +208,28 @@
       content: '';
       position: absolute;
       top: 13px;
-      left: 130px;
+      left: 120px;
 
-      width: 80px;
+      width: 40px;
       height: 1px;
       background-image: url(../images/price/line-price.svg);
+      background-repeat: no-repeat;
 
       @include mq(mobile) {
+        left: 125px;
+
+        width: 80px;
+        background-image: url(../images/price/line-price_sm.svg);
       }
       @include mq(tablet) {
         left: 175px;
+        background-image: url(../images/price/line-price_md.svg);
 
         width: 160px;
       }
       @include mq(desktop) {
         left: 135px;
+        background-image: url(../images/price/line-price_lg.svg);
       }
     }
 
@@ -222,6 +237,9 @@
       display: flex;
       justify-content: space-between;
     }
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 10px;
   }
   @include mq(mobile) {
     &__item:not(:last-child) {
@@ -232,10 +250,6 @@
         margin-bottom: 30px;
       }
     }
-  }
-
-  &__item:not(:last-child) {
-    margin-bottom: 20px;
   }
 
   &__sublist {
