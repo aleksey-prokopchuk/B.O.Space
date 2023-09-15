@@ -30,7 +30,7 @@
         display: block;
       }
     }
-    @include mq(desktop) {
+    @include mq(tablet) {
       text-align-last: left;
     }
 
