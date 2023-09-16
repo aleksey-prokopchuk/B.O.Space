@@ -304,7 +304,7 @@ body {
   }
 }
 .logo__footer {
-  margin-right: 40px;
+  margin-right: 50px;
   width: 50px;
   height: 63px;
 }
@@ -572,19 +572,6 @@ body {
   padding-top: 25px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-}
-@media screen and (min-width: 480px) {
-  .about {
-    padding-top: 40px;
-    background-image: url(../images/about/bg-about_sm.png);
-    background-image: -webkit-image-set(url(../images/about/bg-about_sm.webp) 1x);
-  }
-}
-@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-moz-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
-  .about {
-    background-image: url(../images/about/bg-about_sm@2x.png);
-    background-image: -webkit-image-set(url(../images/about/bg-about_sm@2x.webp) 2x);
-  }
 }
 @media screen and (min-width: 768px) {
   .about {
@@ -946,7 +933,6 @@ body {
 
 .price {
   padding-top: 25px;
-  background-image: url(../images/price/prise-bg.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1250,23 +1236,58 @@ body {
 }
 .pupils {
   padding-top: 40px;
-  background-image: url(../images/pupils/pupils-bg.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 @media screen and (min-width: 768px) {
   .pupils {
+    background-image: url(../images/pupils/bg-pupils_md.png);
+    background-image: -webkit-image-set(url(../images/pupils/bg-pupils_md.webp) 1x);
     padding-top: 80px;
   }
 }
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-moz-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .pupils {
+    background-image: url(../images/pupils/bg-pupils_md@2x.png);
+    background-image: -webkit-image-set(url(../images/pupils/bg-pupils_md@2x.webp) 2x);
+  }
+}
 .pupils__item {
-  display: flex;
-  width: 980px;
+  display: grid;
+  grid-template-columns: 0.1fr 1fr;
+  grid-template-rows: 0.1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "pupils__img-wrapper pupils__title" "pupils__img-wrapper pupils__content-wrapper";
   margin-left: auto;
   margin-right: auto;
+  height: 265px;
+}
+@media screen and (min-width: 480px) {
+  .pupils__item {
+    height: 295px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .pupils__item {
+    grid-template-columns: 0.25fr 1fr;
+    grid-template-rows: 0.25fr 1fr;
+    grid-template-areas: "pupils__img-wrapper pupils__title" "pupils__img-wrapper pupils__content-wrapper";
+    height: 325px;
+    padding: 0 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pupils__item {
+    grid-template-columns: 0.25fr 1fr;
+    grid-template-rows: 0.25fr 1fr;
+    grid-template-areas: "pupils__img-wrapper pupils__title" "pupils__img-wrapper pupils__content-wrapper";
+    height: 340px;
+    padding: 0 100px;
+  }
 }
 .pupils__img-wrapper {
-  display: none;
+  grid-area: pupils__img-wrapper;
   margin-right: 10px;
   padding: 3px;
   width: 58px;
@@ -1326,6 +1347,7 @@ body {
   }
 }
 .pupils__title {
+  grid-area: pupils__title;
   margin-bottom: 20px;
   font-size: 17px;
   font-weight: 700;
@@ -1352,8 +1374,10 @@ body {
     letter-spacing: 0.8px;
   }
 }
+.pupils__content-wrapper {
+  grid-area: pupils__content-wrapper;
+}
 .pupils__content {
-  width: 296px;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.222;
@@ -1368,7 +1392,6 @@ body {
 }
 @media screen and (min-width: 768px) {
   .pupils__content {
-    width: 436px;
     font-size: 20px;
   }
   .pupils__content--margin {
@@ -1377,7 +1400,6 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .pupils__content {
-    width: 630px;
     font-size: 22px;
     line-height: 1.227;
   }
@@ -1385,22 +1407,79 @@ body {
     margin-bottom: 27px;
   }
 }
-.pupils__swiper {
+
+.mySwiper {
+  position: absolute;
+}
+
+.s-button-next,
+.s-button-prev {
   display: none;
 }
-@media screen and (max-width: 767.98px) {
-  .pupils__swiper--mobile {
+@media screen and (min-width: 768px) {
+  .s-button-next,
+  .s-button-prev {
     display: block;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
-  .pupils__swiper--tablet {
-    display: block;
+
+.mySwiper .s-button-next::after,
+.mySwiper .s-button-prev::after {
+  content: "";
+  position: absolute;
+  bottom: calc((100% - 195px) / 2);
+  width: 50px;
+  height: 240px;
+  cursor: pointer;
+  z-index: 10;
+  opacity: 50%;
+  transition: opacity var(--animation-time) var(--cubic);
+}
+@media screen and (min-width: 768px) {
+  .mySwiper .s-button-next::after,
+  .mySwiper .s-button-prev::after {
+    bottom: calc((100% - 100px) / 2);
+    width: 40px;
+    height: 198px;
+    background-size: cover;
   }
 }
 @media screen and (min-width: 1200px) {
-  .pupils__swiper--desktop {
-    display: block;
+  .mySwiper .s-button-next::after,
+  .mySwiper .s-button-prev::after {
+    bottom: calc((100% - 195px) / 2);
+    width: 50px;
+    height: 240px;
+  }
+}
+
+.mySwiper .s-button-next::after {
+  right: 10px;
+  background-image: url(../../../images/svg/arrow.svg);
+}
+
+.mySwiper .s-button-prev::after {
+  left: 10px;
+  background-image: url(../../../images/svg/arrow.svg);
+  transform: scale(-1, 1);
+}
+
+.mySwiper .s-button-next:hover::after,
+.mySwiper .s-button-prev:hover::after,
+.mySwiper .s-button-next:focus::after,
+.mySwiper .s-button-prev:focus::after {
+  opacity: 100%;
+}
+
+.mySwiper .swiper-pagination-bullet {
+  background-color: var(--title-txt-color);
+  width: 20px;
+  height: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .mySwiper .swiper-pagination-bullet {
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -1531,7 +1610,6 @@ body {
 }
 .contacts {
   padding: 20px 0;
-  background-image: url(../images/contacts/contacts-bg.png);
   background-repeat: no-repeat;
   background-position: center;
 }

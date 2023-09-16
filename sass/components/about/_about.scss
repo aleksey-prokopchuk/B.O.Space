@@ -6,13 +6,13 @@
   background-position: 50% 50%;
 
   @include mq(mobile) {
-    padding-top: 40px;
-    background-image: url(../images/about/bg-about_sm.png);
-    background-image: -webkit-image-set(url(../images/about/bg-about_sm.webp) 1x);
-    @include mq(retina) {
-      background-image: url(../images/about/bg-about_sm@2x.png);
-      background-image: -webkit-image-set(url(../images/about/bg-about_sm@2x.webp) 2x);
-    }
+    // padding-top: 40px;
+    // background-image: url(../images/about/bg-about_sm.png);
+    // background-image: -webkit-image-set(url(../images/about/bg-about_sm.webp) 1x);
+    // @include mq(retina) {
+    //   background-image: url(../images/about/bg-about_sm@2x.png);
+    //   background-image: -webkit-image-set(url(../images/about/bg-about_sm@2x.webp) 2x);
+    // }
   }
   @include mq(tablet) {
     padding-top: 80px;
