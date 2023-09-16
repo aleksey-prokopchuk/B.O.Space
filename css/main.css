@@ -1455,12 +1455,12 @@ body {
 
 .mySwiper .s-button-next::after {
   right: 10px;
-  background-image: url(../../../images/svg/arrow.svg);
+  background-image: url(../images/svg/arrow.svg);
 }
 
 .mySwiper .s-button-prev::after {
   left: 10px;
-  background-image: url(../../../images/svg/arrow.svg);
+  background-image: url(../images/svg/arrow.svg);
   transform: scale(-1, 1);
 }
 
