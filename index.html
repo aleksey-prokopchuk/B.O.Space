@@ -63,6 +63,20 @@
             </svg>
           </a>
         </div>
+        <button
+          class="mobile-btn"
+          type="button"
+          data-menu-button=""
+          aria-label="кнопка мобільного меню"
+        >
+          <svg class="mobile-btn__icon">
+            <use class="mobile-btn__icon--open" href="./images/svg/spryte.svg#icon-menu_open"></use>
+            <use
+              class="mobile-btn__icon--close"
+              href="./images/svg/spryte.svg#icon-menu_close"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -869,9 +883,43 @@
         <p class="footer__copyright">Всі права захищені 2023 рік</p>
       </div>
     </footer>
+    <div class="mobile" data-menu="">
+      <div class="mobile__container container">
+        <div class="mobile__wrapper">
+          <a class="link-no-decor mobile__link--logo" href="">
+            <svg class="mobile__logo logo">
+              <use href="./images/svg/spryte.svg#logo"></use>
+            </svg>
+          </a>
+          <a class="mobile__link mobile__link--contact link-no-decor" href="tel:+380980810035"
+            >+380 98 081 00 35</a
+          >
+        </div>
+        <nav class="mobile__nav">
+          <ul class="mobile__list list-no-marker">
+            <li class="mobile__item" data-menu-about="">
+              <a class="mobile__link link-no-decor" href="#about">Про нас </a>
+            </li>
+            <li class="mobile__item" data-menu-price="">
+              <a class="mobile__link link-no-decor" href="#price">Ціни</a>
+            </li>
+            <li class="mobile__item" data-menu-pupils="">
+              <a class="mobile__link link-no-decor" href="#pupils">Наші учні </a>
+            </li>
+            <li class="mobile__item" data-menu-rules="">
+              <a class="mobile__link link-no-decor" href="#rules">Правила</a>
+            </li>
+            <li class="mobile__item" data-menu-contacts="">
+              <a class="mobile__link link-no-decor" href="#contacts">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </body>
   <script type="module" src="./js/scroll.js"></script>
   <script type="module" src="./js/up.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="./js/swiper.js"></script>
+  <script type="module" src="./js/mobile-menu.js"></script>
 </html>

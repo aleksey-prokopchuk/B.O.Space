@@ -58,7 +58,10 @@
     // }
   }
   &__link-img {
-    display: block;
+    display: none;
+    @include mq(tablet) {
+      display: block;
+    }
     @include mq(desktop) {
       display: none;
     }

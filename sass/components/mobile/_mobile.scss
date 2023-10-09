@@ -1,0 +1,120 @@
+@import './mobile-btn/mobile-btn';
+
+.mobile {
+  position: fixed;
+  top: 0;
+  background: var(--gradient-stroke);
+  width: 100vw;
+  height: 300px;
+
+  transform: translateY(-100%);
+  transition: transform var(--animation-time) var(--cubic);
+
+  // transform: 0;
+  @include mq(mobile) {
+    height: 373px;
+  }
+  @include mq(tablet) {
+    height: 605px;
+  }
+  border-radius: 0px 0px 30px 30px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+    padding: 15px 20px;
+
+    @include mq(mobile) {
+      padding: 20px;
+    }
+    @include mq(tablet) {
+      padding: 42px 20px;
+    }
+
+    text-align: center;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+
+    margin-bottom: 17px;
+    @include mq(mobile) {
+      margin-bottom: 40px;
+    }
+    @include mq(tablet) {
+      margin-bottom: 80px;
+    }
+  }
+
+  &__item {
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  &__link {
+    color: var(--white-txt-color);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.3px;
+
+    transition: text-shadow var(--animation-time) var(--cubic),
+      opacity var(--animation-time) var(--cubic);
+
+    @include mq(tablet) {
+      font-size: 22px;
+    }
+    &--contact {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.25;
+      letter-spacing: 0.24px;
+      @include mq(tablet) {
+        font-size: 18px;
+      }
+    }
+
+    &--logo {
+      margin-right: 30px;
+      @include mq(mobile) {
+        margin-right: 73px;
+      }
+      @include mq(tablet) {
+        margin-right: 240px;
+      }
+    }
+  }
+
+  &__link:hover,
+  &__link:focus {
+    text-shadow: 0px 0px 12px rgba(255, 255, 255, 0.9);
+  }
+  &__link:active {
+    text-shadow: none;
+    opacity: 0.5;
+  }
+
+  &__logo {
+    width: 40px;
+    height: 51px;
+    @include mq(mobile) {
+      width: 47px;
+      height: 60px;
+    }
+  }
+
+  &__nav {
+  }
+  &__list {
+    text-align: center;
+  }
+}
+.is-open {
+  transform: translateY(0);
+  transition: transform var(--animation-time) var(--cubic);
+}
